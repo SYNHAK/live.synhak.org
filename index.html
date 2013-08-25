@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Synhak...Live!</title>
+    <meta name="viewport" contents="width=device-width, initial-scale=1.0"/>
+     <link href="//fonts.googleapis.com/css?family=Marck Script" rel='stylesheet' type='text/css'>
+     <link href='http://fonts.googleapis.com/css?family=Maven+Pro:400,900' rel='stylesheet' type='text/css'>
+     <link href='//fonts.googleapis.com/css?family=Exo:400,900' rel='stylesheet' type='text/css'>
+     <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" />
+     <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <header>
+      <div class="jumbotron" id="masthead">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-10">
+              <h1>Synhak...Live!</h1>
+            </div>
+            <div class="col-md-2" id="door-block">
+              <h2>Front Door</h2>
+                <div id="door-state" class="door-state-checking">
+                  <div class="door-sign-checking">
+                    <span class="door-cursive">Hang on</span>
+                    <span class="door-we-are">We're</span>
+                    <span class="door-status">checking</span>
+                  </div>
+                  <div class="door-sign-open">
+                    <span class="door-cursive">Come in!</span>
+                    <span class="door-we-are">We're</span>
+                    <span class="door-status">open!</span>
+                  </div>
+                  <div class="door-sign-closed">
+                    <span class="door-cursive">Sorry</span>
+                    <span class="door-we-are">we're</span>
+                    <span class="door-status">closed</span>
+                  </div>
+                  <div class="door-sign-error">
+                    <span class="door-cursive">Sorry</span>
+                    <span class="door-we-are">we're</span>
+                    <span class="door-status">unable to knock on the door</span>
+                  </div>
+                  <div id="door-state-timestamp">
+                  </div>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-5">
+          <h2>Calendar of Events</h2>
+          <div id="calendar">
+          <iframe src="https://www.google.com/calendar/embed?showCalendars=0&amp;mode=AGENDA&amp;height=600&amp;wkst=1&amp;bgcolor=%23ffffff&amp;src=ihquokkv4i8cigabaomrl68ak4%40group.calendar.google.com&amp;color=%232F6309&amp;ctz=America%2FNew_York" style=" border-width:0 " height="450" frameborder="0" scrolling="no"></iframe>
+        </div>
+        </div>
+        <div class="col-md-7">
+          <h2>Hackercam</h2>
+          <img src="http://space.synhak.org:8000/mjpg/video.mjpg" width="640" height="480" id="hackercam"/>
+        </div>
+        <div class="col-md-2">
+        </div>
+      </div>
+    </div>
+    <script src="//code.jquery.com/jquery.js"></script>
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+    <script src="live.js"></script>
+  </body>
+</html>

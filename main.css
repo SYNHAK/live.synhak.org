@@ -1,0 +1,117 @@
+#door-state div[class|="door-sign"] {
+  display: none;
+}
+
+.door-state-closed .door-sign-closed {
+  display: block !important;
+}
+
+.door-state-open .door-sign-open {
+  display: block !important;
+}
+
+.door-state-error .door-sign-error {
+  display: block !important;
+}
+
+.door-state-checking .door-sign-checking {
+  display: block !important;
+}
+
+#door-state {
+  background: black;
+  width: 200px;
+  height: 100px;
+  color: #fff;
+  position: relative;
+}
+
+#door-state span {
+  display: block;
+  position: absolute;
+}
+
+#door-state .door-cursive {
+  font-size: 30px;
+  line-height: 40px;
+  font-family: 'Marck Script', cursive;
+  font-weight: 500;
+  text-decoration: underline;
+  -webkit-transform: rotate(-10deg);
+  top: 0;
+  left: 10px;
+}
+
+#door-state .door-we-are {
+  right: 10px;
+  top: 10px;
+  font-size: 28px;
+  line-height: 30px;
+  text-transform: uppercase;
+  font-family: 'Maven Pro';
+  font-weight: 900;
+}
+
+#door-state .door-status {
+  color: #f00;
+  font-size: 58px;
+  line-height: 38px;
+  font-weight: 900;
+  font-family: 'Exo';
+  bottom: 20px;
+  left: 0;
+  text-align: center;
+  width: 100%;
+  text-transform: uppercase;
+}
+
+.door-sign-closed .door-status {
+  font-size: 50px !important;
+}
+
+.door-sign-closed .door-cursive {
+  font-size: 40px !important;
+}
+
+.door-sign-checking .door-status {
+  font-size: 40px !important;
+  color: #aaa !important;
+}
+
+.door-sign-open .door-status {
+  color: #0f0 !important;
+}
+
+.door-sign-error .door-status {
+  font-size: 20px !important;
+  line-height: 20px !important;
+  color: #00f !important;
+}
+
+#masthead {
+  background-color: #f80;
+}
+
+#masthead h1 {
+  font-family: "Exo";
+  font-weight: 900;
+  font-size: 80px;
+}
+
+#door-block h2 {
+  display: none;
+}
+
+#door-state #door-state-timestamp {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  font-size: 12px;
+  line-height: 15px;
+  font-family: "Exo";
+}
+
+#calendar iframe {
+  width: 100%;
+}
