@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Synhak Front Door</title>
+     <link href="door.css" rel="stylesheet" type="text/css">
+     <link href="//fonts.googleapis.com/css?family=Marck Script" rel='stylesheet' type='text/css'>
+     <link href='http://fonts.googleapis.com/css?family=Maven+Pro:400,900' rel='stylesheet' type='text/css'>
+     <link href='//fonts.googleapis.com/css?family=Exo:400,900' rel='stylesheet' type='text/css'>
+  </head>
+  <link rel="stylesheet" href="door.css"/>
+  <body>
+    <div id="door-state" class="door-state-checking">
+      <div class="door-sign-checking">
+        <span class="door-cursive">Hang on</span>
+        <span class="door-we-are">We're</span>
+        <span class="door-status">checking</span>
+      </div>
+      <div class="door-sign-open">
+        <span class="door-cursive">Come in!</span>
+        <span class="door-we-are">We're</span>
+        <span class="door-status">open!</span>
+      </div>
+      <div class="door-sign-closed">
+        <span class="door-cursive">Sorry</span>
+        <span class="door-we-are">we're</span>
+        <span class="door-status">closed</span>
+      </div>
+      <div class="door-sign-error">
+        <span class="door-cursive">Sorry</span>
+        <span class="door-we-are">we're</span>
+        <span class="door-status">unable to knock on the door</span>
+      </div>
+      <div id="door-state-timestamp">
+      </div>
+    </div>
+    <script src="//code.jquery.com/jquery.js"></script>
+    <script src="door.js"></script>
+  </body>
+</html>
