@@ -1,0 +1,10 @@
+{
+  "type": "rich",
+  "version": "1.0",
+  "title": "SYNHAK Front Door",
+  "width": 200,
+  "height": 100,
+  "html": "<iframe src=\"http://live.synhak.org/embed.html\" width=\"100\" height=\"100\"></iframe>",
+  "provider_name": "SYNHAK",
+  "provider_url": "http://synhak.org/",
+}
