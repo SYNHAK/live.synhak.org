@@ -3,10 +3,11 @@
   <head>
     <title>Synhak...Live!</title>
     <meta name="viewport" contents="width=device-width, initial-scale=1.0"/>
-     <link href='//fonts.googleapis.com/css?family=Exo:400,900' rel='stylesheet' type='text/css'>
-     <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" />
+     <link href='https://fonts.googleapis.com/css?family=Exo:400,900' rel='stylesheet' type='text/css'>
+     <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" />
      <link rel="stylesheet" href="main.css" />
      <link rel="alternate" type="application/json+oembed" href="http://live.synhak.org/oembed.json" title="live.synhak.org oEmbed"/>
+     <link rel="alternate" type="text/xml+oembed" href="http://live.synhak.org/oembed.xml" title="live.synhak.org oEmbed"/>
   </head>
   <body>
     <header>
@@ -26,6 +27,14 @@
     </header>
     <div class="container">
       <div class="row">
+        <div class="col-md-12" id="now-playing">
+          <span id="now-playing-label"><a
+              href="http://synhak.org/wiki/Jukebox">Now Playing:</a></span> <span id="now-playing-text">Loading...</span>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
         <div class="col-md-5">
           <h2>Calendar of Events</h2>
           <div id="calendar">
@@ -34,14 +43,15 @@
         </div>
         <div class="col-md-7">
           <h2>Hackercam</h2>
-          <img src="http://space.synhak.org:8000/mjpg/video.mjpg" width="640" height="480" id="hackercam"/>
+          <!--<img src="http://space.synhak.org:8000/mjpg/video.mjpg"
+              width="640" height="480" id="hackercam"/> -->
         </div>
         <div class="col-md-2">
         </div>
       </div>
     </div>
-    <script src="//code.jquery.com/jquery.js"></script>
-    <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
     <script src="live.js"></script>
     <script type="text/javascript">
 

@@ -15,3 +15,11 @@
 #calendar iframe {
   width: 100%;
 }
+
+#now-playing {
+  font-size: xx-large;
+}
+
+#now-playing-label {
+  font-weight: bold;
+}
