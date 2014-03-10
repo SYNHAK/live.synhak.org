@@ -13,7 +13,7 @@ function updateJukeboxError() {
 
 $(document).ready(function () {
   $.ajax({
-    url: "https://synhak.org/auth/sensors/4.json",
+    url: "https://synhak.org/auth/v1/sensor/4/?format=json",
     success: onJukeboxSensorPolled,
     error: updateJukeboxError,
   });

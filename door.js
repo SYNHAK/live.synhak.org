@@ -23,7 +23,7 @@ function updateSignError() {
 
 $(document).ready(function () {
   $.ajax({
-    url: "https://synhak.org/auth/sensors/3.json", 
+    url: "https://synhak.org/auth/v1/sensor/3/?format=json", 
     success: onDoorSensorPolled,
     error: updateSignError,
   })
